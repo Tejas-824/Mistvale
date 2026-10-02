@@ -59,6 +59,7 @@ nav a:hover{border-color:var(--saffron)}
 .tools{margin-left:auto;display:flex;gap:8px}
 @media(min-width:768px){nav{display:flex}.tools{margin-left:0}}
 #count{position:absolute;top:2px;right:0;min-width:20px;height:20px;border-radius:999px;background:var(--saffron);color:var(--ink);font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center}
+
 /* hero */
 .hero{display:grid;gap:32px;align-items:center}
 @media(min-width:768px){.hero{grid-template-columns:1fr 1fr}}
@@ -67,6 +68,8 @@ nav a:hover{border-color:var(--saffron)}
 .trust{background:var(--green);color:var(--cream);padding:24px 0}
 .trust ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:14px}
 @media(min-width:768px){.trust ul{grid-template-columns:repeat(4,1fr)}}
+
+
 /* shop */
 .tools2{display:grid;gap:16px;margin-bottom:24px}
 @media(min-width:768px){.tools2{grid-template-columns:1fr auto auto;align-items:end}}
@@ -96,6 +99,7 @@ input,select{width:100%;min-height:44px;padding:8px 16px;border:1px solid var(--
 .heart:hover{transform:translateY(-2px)}
 .heart[aria-pressed=true] .icon{fill:var(--green)}
 .none{grid-column:1/-1;text-align:center;padding:48px 0}
+
 /* delivery, reviews, faq */
 .pin{display:flex;flex-wrap:wrap;gap:16px;align-items:end;max-width:560px}
 .pin div{flex:1;min-width:200px}
@@ -103,6 +107,7 @@ input,select{width:100%;min-height:44px;padding:8px 16px;border:1px solid var(--
 .ok{color:var(--leaf)}.bad{color:var(--err)}
 .ok{color:#2f5a25}
 .quotes{display:grid;gap:16px}
+
 @media(min-width:768px){.quotes{grid-template-columns:repeat(3,1fr)}}
 blockquote{margin:0;background:var(--parch);padding:24px;border-radius:var(--r)}
 blockquote cite{display:block;margin-top:16px;font-style:normal;font-weight:600;font-size:14px}
@@ -113,11 +118,13 @@ summary::after{content:"+";font-size:24px;line-height:1}
 details[open] summary::after{content:"\2212"}
 summary:hover{color:var(--leaf)}
 details p{padding-bottom:8px;color:var(--muted)}
+
 /* footer */
 footer{background:var(--green);color:var(--cream);padding:48px 0 32px}
 footer a{color:var(--cream)}
 footer h2{color:var(--cream);font-size:28px}
 .legal{font-size:14px;opacity:.9}
+
 /* drawer, dialog, toast */
 #ov{position:fixed;inset:0;background:rgba(27,27,27,.5);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:90}
 #ov.on{opacity:1;pointer-events:auto}
@@ -141,6 +148,7 @@ dialog::backdrop{background:rgba(27,27,27,.5)}
 dialog img{border-radius:var(--r);width:100%;max-width:320px;margin:0 auto 16px;aspect-ratio:1/1;object-fit:cover}
 #toast{position:fixed;left:50%;bottom:16px;transform:translate(-50%,16px);background:var(--green);color:var(--cream);padding:8px 24px;border-radius:var(--r);opacity:0;transition:opacity .25s ease,transform .25s ease;z-index:200;pointer-events:none;text-align:center}
 #toast.on{opacity:1;transform:translate(-50%,0)}
+
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>

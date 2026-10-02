@@ -21,13 +21,17 @@
 
 ## 2. What the AI got wrong
 - My first version stretched the product images because of `width`/`height` attributes on the `<img>` tags. I noticed it on my screen and the AI fixed it with `height:auto`.
+- Gemini gave me very large images and I used them straight on Vercel. The page downloaded about 30 MB and took 2.4 minutes on Slow 4G. I found it in the Chrome Network tab.
 
 ## 3. Images
 - Made with Gemini: 8 product images and the hero.
 - Logo is a simple SVG (leaf and the word Mistvale).
+- Before: total about 30 MB. Hero was 6.5 MB, product images were 0.6 MB to 6.3 MB each.
+- Fix: resized product images then saved as WebP with Squoosh.
 
 ## 4. How I tested it
 - Chrome, phone width 360px, keyboard only.
+- Checked image size and load time in the Chrome Network tab on Slow 4G, before and after compressing.
 
 ## 5. Time spent
 - Generation of image took some time and almost 3 hours to understand and implement. 
